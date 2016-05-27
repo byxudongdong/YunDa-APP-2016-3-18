@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg1"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff8540" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="韵达快递-服务器设置[]" />
+        </LinearLayout>
+
+      <LinearLayout 
+          android:id="@+id/linearLayout2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_below="@id/linearLayout1"
+          >
+         <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="数据收发服务器地址&amp;端口"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/datasend"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:singleLine="true"
+                android:background="@drawable/kuang"
+                android:paddingLeft="5dp"
+              />  
+      </LinearLayout>
+ <LinearLayout 
+          android:id="@+id/linearLayout3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_below="@id/linearLayout2"
+          >
+         <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="软件升级服务器地址&amp;端口"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Software_upgrade"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/kuang"
+                 android:singleLine="true"
+                android:paddingLeft="5dp"
+              />  
+      </LinearLayout>
+       <LinearLayout 
+          android:id="@+id/linearLayout4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_below="@id/linearLayout3"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:text="快件查询服务器地址&amp;端口"
+             android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Express_query_server"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/kuang"
+                 android:singleLine="true"
+                android:paddingLeft="5dp"
+              />  
+      </LinearLayout>
+       <LinearLayout 
+          android:id="@+id/linearLayout5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_below="@id/linearLayout4"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:text="自动集包地址"
+             android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Automatic_package"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/kuang"
+                 android:singleLine="true"
+                android:paddingLeft="5dp"
+              />  
+      </LinearLayout>
+             <LinearLayout 
+          android:id="@+id/linearLayout6"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_below="@id/linearLayout5"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:text="Web服务器地址&amp;端口"
+             android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/serverweb"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/kuang"
+                 android:singleLine="true"
+                android:paddingLeft="5dp"
+              />  
+      </LinearLayout>
+             <LinearLayout 
+          android:id="@+id/linearLayout7"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_below="@id/linearLayout6"
+          >  
+      </LinearLayout>
+           
+             <LinearLayout 
+          android:id="@+id/linearLayout8"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_below="@id/linearLayout7"
+          >  
+      </LinearLayout>
+             <LinearLayout 
+          android:id="@+id/linearLayout9"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_below="@id/linearLayout8"
+          >
+		<Button
+        android:id="@+id/finshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_button_selector"
+        android:layout_weight="1"
+        android:text="返回" />
+		<View 
+		    android:layout_width="5dp"
+		    android:layout_height="wrap_content"
+		    
+		    />
+        <Button
+        android:id="@+id/determine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_button_selector"
+        android:text="确定" />
+      </LinearLayout>
+    </RelativeLayout>
+    
+</ScrollView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/ed_medit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="韵达快递-自动上传设置 []" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ed_medit"
+        android:background="#F9F900" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="37dp"
+            android:text="设置数据自动上传"
+            android:textSize="20dp" />
+    </RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_below="@id/relativeLayout1"
+    android:id="@+id/relativeLayout2"
+    >
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+    	android:textSize="15dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="30dp"
+        android:text="扫描条数阀值(主)" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="32dp"
+        android:textSize="15dp"
+        android:text="时间周期(次)" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="@drawable/kuang"
+        android:padding="5dp"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/editText1"
+         android:background="@drawable/kuang"
+            android:padding="5dp"
+        android:ems="10" />
+</RelativeLayout>
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/relativeLayout2"
+      android:orientation="horizontal"
+     android:layout_marginTop="50dp"
+      >
+      <Button
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button_selector"
+                android:layout_weight="1"
+                android:text="返回" />
+      <View 
+          android:layout_width="5dp"
+         android:layout_height="wrap_content"
+          />
+      <Button
+                android:id="@+id/backbutton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button_selector"
+                android:layout_weight="1"
+                android:text="确定" />
+      
+  </LinearLayout>
+
+</RelativeLayout>

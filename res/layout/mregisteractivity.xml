@@ -1,0 +1,90 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:background="@drawable/bg1"
+       
+  >
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" 
+    android:orientation="vertical"
+        >
+    <TextView
+        android:id="@+id/regist_topname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="通过安全、快捷的服务，传爱心、送温暖、更便利。"
+        android:textColor="@android:color/black" />
+
+   <EditText
+       android:id="@+id/regist_username"
+       android:layout_width="fill_parent"
+       android:layout_height="45dip"
+       android:layout_marginTop="10dip"
+       android:hint="请输入用户名"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+       android:singleLine="true" 
+       android:maxLength="30" 
+       android:textColorHighlight="#7e4d84" 
+       android:ellipsize="end"
+       android:gravity="center_vertical"
+       android:background="@drawable/txtborder"
+      android:paddingRight="2dp"/>
+   <EditText
+       android:id="@+id/regist_password1"
+       android:layout_width="fill_parent"
+       android:layout_height="45dip"
+       android:layout_marginTop="10dip"
+       android:password="true"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:singleLine="true" 
+       android:ellipsize="end"
+       android:hint="请输入密码"
+       android:gravity="center_vertical"
+       android:background="@drawable/txtborder"
+       android:paddingRight="2dp"/>
+    <EditText
+       android:id="@+id/regist_password2"
+       android:layout_width="fill_parent"
+       android:layout_height="45dip"
+       android:layout_marginTop="10dip"
+       android:password="true"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:singleLine="true" 
+       android:ellipsize="end"
+       android:hint="再次输入密码"
+       android:gravity="center_vertical"
+       android:background="@drawable/txtborder"
+       android:paddingRight="2dp"/>
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+        android:layout_marginTop="10dip"
+       >
+       
+       <Button
+           android:id="@+id/quxiaobutton"
+           android:layout_width="150dip"
+           android:layout_height="45dip"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:background="@drawable/login_button_selector"
+           android:text="取消" />
+       <View 
+           android:layout_width="10dp"
+           android:layout_height="wrap_content"/>
+       <Button
+           android:id="@+id/mRegister2"
+           android:layout_width="150dip"
+           android:layout_height="45dip"
+           android:text="注册" 
+            android:layout_weight="1"
+            android:background="@drawable/login_button_selector"
+/>
+   </LinearLayout>
+</LinearLayout>
+</ScrollView>

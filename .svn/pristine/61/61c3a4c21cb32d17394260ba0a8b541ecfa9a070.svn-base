@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/bg1"
+    >
+   <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+     <LinearLayout
+         android:id="@+id/linear1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linearLayout1"
+         android:orientation="horizontal"
+         android:layout_marginTop="5dp"
+        >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="20dp"
+             android:text="大包号   "
+          />
+
+         <EditText
+             android:id="@+id/largesizepackage"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:layout_weight="1"
+             android:background="@drawable/txtborder" />
+
+     </LinearLayout>
+<LinearLayout
+         android:id="@+id/linear2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linear1"
+         android:layout_marginTop="5dp"
+        >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="下一站   "
+               android:textSize="20dp"
+             />
+
+         <EditText
+             android:id="@+id/NextStation"
+             android:layout_width="80dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:background="@drawable/txtborder" />
+           <EditText
+             android:id="@+id/NextStationcontent"
+             android:layout_width="100dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:layout_weight="1"
+             android:singleLine="true"
+             android:background="@drawable/txtborder" />
+
+     </LinearLayout>
+     <LinearLayout
+         android:id="@+id/linear3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linear2"
+         android:layout_marginTop="5dp"
+    >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="运单号   "
+               android:textSize="20dp"
+ />
+
+            />
+          <EditText
+             android:id="@+id/Waybillnumbercontent"
+             android:layout_width="250dp"
+             android:layout_height="wrap_content"
+              android:background="@drawable/txtborder" 
+            
+            />
+
+          <Button
+              android:id="@+id/adddata"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:background="@drawable/login_button_selector"
+ 				 style="?android:attr/buttonStyleSmall"
+              android:text="ok添加" />
+
+     </LinearLayout>
+     <LinearLayout
+         android:id="@+id/linear4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linear3"
+         android:layout_marginTop="2dp"
+         >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="已扫描数"
+               android:textSize="20dp"
+           />
+
+         <EditText
+             android:id="@+id/Scannednumber"
+             android:layout_width="250dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:text="0"
+             android:background="@drawable/txtborder" />
+
+         <Button
+             android:id="@+id/deletedata"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="wrap_content"
+               android:layout_height="40dp"
+              android:background="@drawable/login_button_selector"
+             android:text="  删除  " />
+
+     </LinearLayout>
+      <LinearLayout
+         android:id="@+id/linear6"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linear4"
+         >
+
+	<ListView
+	    android:id="@+id/shadowListView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="103dp" >
+	    
+	</ListView>
+
+     </LinearLayout>
+
+     <Button
+         android:id="@+id/backbutton"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:background="@drawable/login_button_selector"
+         android:text="返回" />
+
+     <TextView
+         android:id="@+id/packettotal"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:textSize="50dp"
+         android:text="0" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_toRightOf="@+id/packettotal"
+         android:text="/0"
+         android:textSize="50dp" />
+		   <ImageView
+         android:id="@+id/packetimageView1"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_alignTop="@+id/backbutton"
+         android:layout_toLeftOf="@+id/backbutton"
+         android:paddingBottom="20dp"
+         />
+ </RelativeLayout>
+
+</RelativeLayout>

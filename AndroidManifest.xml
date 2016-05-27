@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yunda_app_2016_3_18"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+      	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	    <uses-permission android:name="android.permission.INTERNET" />
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		<uses-permission android:name="android.permission.BLUETOOTH"/>
+	    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+	    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+	    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission> 
+	    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission> 
+	    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+	    <application
+        android:allowBackup="true"
+        android:icon="@drawable/yundaicon"
+        android:label="@string/app_name"
+         android:name="com.yunda.untils.MyApplication"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.yunda.activity.cn.LoginActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       <activity android:name="com.yunda.activity.cn.PacketScanningActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+       <activity android:name="com.yunda.activity.cn.VehicleSchedulingActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+       <activity android:name="com.yunda.activity.cn.BusinessActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+       <activity android:name="com.yunda.activity.cn.SettingActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+       <activity android:name="com.yunda.activity.cn.RegistActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+       <activity android:name="com.yunda.activity.cn.MainmenueActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+       <activity android:name="com.yunda.activity.cn.DonwloaddataActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+       <activity android:name="com.yunda.activity.cn.ScanningActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+       <activity android:name="com.yundaW16setting.cn.BlueoothScanActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+       <activity android:name="com.yunda.wifi.cn.WifiListActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" /> 
+       <activity android:name="com.yunda.sound.cn.SoundActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" /> 
+       <activity android:name="com.yunda.display_light.cn.DisplayLightActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" /> 
+       <service android:name="com.yundaW16setting.cn.BluetoothService"></service>
+       <activity android:name="com.yunda.bluetoothpairing.cn.BluetoothprinterActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" /> 
+       <activity android:name="com.yunda.activity.cn.CompangListActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" /> 
+       <service android:name="com.yunda.activity.cn.DownloadService"></service>
+       <activity android:name="com.yunda.activity.cn.StaffListActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" /> 
+       <activity android:name="com.yunda.activity.cn.ProblemListActivity"></activity>
+
+       <category android:name="android.intent.category.DEFAULT" /> 
+        <activity android:name="com.yunda.activity.cn.AbnormalActivity"></activity>
+       <category android:name="android.intent.category.DEFAULT" /> 
+          <activity android:name="com.yunda.activity.cn.ArrearsActivity"></activity>
+       <category android:name="android.intent.category.DEFAULT" /> 
+        <activity android:name="com.yunda.activity.cn.RecordActivity"></activity>
+       <category android:name="android.intent.category.DEFAULT" /> 
+        <activity android:name="com.yunda.activity.cn.SearchrecrodActivity"></activity>
+       <category android:name="android.intent.category.DEFAULT" /> 
+        <activity android:name="com.yunda.activity.cn.ScansearchActivity"></activity>
+       <category android:name="android.intent.category.DEFAULT" /> 
+      
+       <activity android:name="com.yunda.activity.cn.Truckloading"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+       <activity android:name="com.yunda.activity.cn.TrucktypeActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+       <activity android:name="com.yunda.activity.cn.InvoicevoucherscanActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" /> 
+       
+	   <activity android:name="com.yunda.activity.cn.AdminActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" /> 
+         
+	   <activity android:name="com.yunda.activity.cn.AdminSettingActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" /> 
+           <activity android:name="com.yunda.activity.cn.ServerSettingActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" /> 
+                <activity android:name="com.yunda.activity.cn.AutouploadActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+           <activity android:name="com.yunda.activity.cn.BluetoothSettingActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+           <activity android:name="com.yunda.activity.cn.ReturnPartActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+          <activity android:name="com.yunda.activity.cn.ReturnPartDatauploadActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+           <activity android:name="com.yunda.activity.cn.LoadingScanActivity"></activity>
+         <category android:name="android.intent.category.DEFAULT" />
+        
+  	 <service android:name="com.yunda.activity.cn.ArrearsServices"></service>
+  	 <receiver android:name="com.yunda.activity.cn.Broadcast">
+	  	<intent-filter>
+	    <action android:name="android.intent.action.BOOT_COMPLETED" />
+	   </intent-filter>
+  	</receiver>
+  	 <receiver android:name="com.yunda.activity.cn.BluetoothConnectActivityReceiver" >    
+        <intent-filter>    
+           <action android:name="android.bluetooth.device.action.PAIRING_REQUEST" />    
+        </intent-filter>    
+   </receiver>
+    </application>
+
+</manifest>

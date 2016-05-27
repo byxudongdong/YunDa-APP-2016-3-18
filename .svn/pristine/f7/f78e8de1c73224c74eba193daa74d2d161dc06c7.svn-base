@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg1"
+    android:layout_height="match_parent" >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff8540" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:textSize="20dp"
+            android:text="韵达快递-总菜单[一大区]" />
+
+        <ImageView
+            android:id="@+id/imaew1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingBottom="10dp"
+          android:layout_marginLeft="50dp"
+            android:src="@drawable/jiantou1" />
+
+        <TextView
+            android:id="@+id/totaldata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:textSize="20dp"
+              android:text="0/0"
+           />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp" 
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearLayout1"
+        >
+
+        <Button
+            android:id="@+id/yewubutton"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_button_selector"
+            android:text="业务操作[1]" />
+
+        <Button
+            android:id="@+id/jiluchaxunbutton"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yewubutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button_selector"
+            android:text="记录查询/业绩统计[2]" />
+
+        <Button
+            android:id="@+id/xinxichaxunbutton"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jiluchaxunbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button_selector"
+            android:text="信息查询[3]" />
+
+        <Button
+            android:id="@+id/ziliaoxiazaibutt"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xinxichaxunbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button_selector"
+            android:text="资料下载[4]" />
+
+        <Button
+            android:id="@+id/xitongshezhi"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ziliaoxiazaibutt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button_selector"
+            android:text="系统设置[5]" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+         android:layout_marginTop="20dp"
+          android:layout_centerHorizontal="true"
+        >
+ <Button
+            android:id="@+id/destorybutton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_button_selector" 
+            android:text="注销" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/t_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+         android:textSize="20dp"
+  />
+    <TextView
+        android:id="@+id/t_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/t_time"
+          android:textSize="20dp"
+ 
+       />
+
+    <TextView
+        android:id="@+id/dengluid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/t_name"
+          android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/gongzhongming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/t_time"
+        android:layout_alignBottom="@+id/t_time"
+        android:layout_alignParentRight="true"
+          android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/gongzhongid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dengluid"
+        android:layout_alignParentRight="true"
+          android:textSize="20dp"
+       />
+
+    <TextView
+        android:id="@+id/gongweiid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dengluid"
+        android:layout_alignBottom="@+id/dengluid"
+        android:layout_alignParentRight="true"
+          android:textSize="20dp"
+        />
+
+ </RelativeLayout>
+
+</ScrollView>

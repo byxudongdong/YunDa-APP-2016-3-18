@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg1"
+    android:layout_height="match_parent" >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff8540" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="韵达快递-工种选择[中国人]" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" 
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearLayout1"
+        >
+
+        <Button
+            android:id="@+id/yewubutton"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_button_selector"
+            android:text="班车解锁[1]" />
+
+        <Button
+            android:id="@+id/jiluchaxunbutton"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yewubutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button_selector"
+            android:text="班车解锁[2]" />
+
+        <Button
+            android:id="@+id/xinxichaxunbutton"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jiluchaxunbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button_selector"
+            android:text="网点到站[3]" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+         android:layout_marginTop="20dp"
+          android:layout_centerHorizontal="true"
+        >
+ <Button
+            android:id="@+id/Shuttle_bus_back_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_button_selector"
+            android:text="返回" />
+    </RelativeLayout>
+ </RelativeLayout>
+</ScrollView>

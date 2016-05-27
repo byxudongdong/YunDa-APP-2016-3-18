@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg1"
+    android:layout_height="match_parent" >
+
+   <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff8540" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="韵达快递-资料下载[一大区]" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearLayout1"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:id="@+id/companylist"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jiluchaxunbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button_selector"
+            android:layout_weight="1"
+            android:text="公司列表[1]" />
+        <View 
+               android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            
+            />
+
+         <Button
+             android:id="@+id/stafflist"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+             android:layout_below="@id/jiluchaxunbutton"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="10dp"
+              android:layout_weight="1"
+             android:background="@drawable/login_button_selector"
+             android:text="员工列表[2]" />
+
+    </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/relative1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/linearLayout2"
+      android:layout_marginTop="10dp" >
+
+      <Button
+          android:id="@+id/mProblemPiecesButton"
+          android:layout_width="180dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/login_button_selector"
+          android:text="问题件/留仓原件[3]" />
+
+ 			 <View 
+               android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            
+            />
+      <Button
+          android:id="@+id/mAbnormalyButton"
+          style="?android:attr/buttonStyleSmall"
+        	 android:layout_width="160dp"
+            android:layout_height="wrap_content"
+               android:layout_weight="1"
+          android:background="@drawable/login_button_selector"
+          android:text="异常签收类型[4]" />
+  </LinearLayout>
+
+    <RelativeLayout 
+      android:id="@+id/relative2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/relative1"
+       android:layout_marginTop="10dp"
+      >
+      
+      <Button
+          android:id="@+id/mCompanyarrearsButton"
+          android:layout_width="180dp"
+            android:layout_height="wrap_content"
+          android:background="@drawable/login_button_selector"
+          android:text="欠费公司列表[5]" />
+  </RelativeLayout>
+    <RelativeLayout 
+      android:id="@+id/relative3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/relative2"
+       android:layout_marginTop="10dp"
+      >
+  </RelativeLayout>
+ </RelativeLayout>
+
+    
+
+</ScrollView>

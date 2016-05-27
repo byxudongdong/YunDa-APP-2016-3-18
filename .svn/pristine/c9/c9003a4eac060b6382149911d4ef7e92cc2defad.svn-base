@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/bg1"
+    >
+   <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff8540" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="韵达快递-装车扫描" />
+    </LinearLayout>
+    <LinearLayout
+         android:id="@+id/zllinear"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linearLayout1"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp" >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="重量"
+             android:textSize="20dp" />
+         <CheckBox 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/invicecheckbox" 
+             
+             />
+
+         <EditText
+             android:id="@+id/weighteditect"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:layout_weight="1"
+             android:background="@drawable/txtborder" />
+
+     </LinearLayout>
+    <LinearLayout
+         android:id="@+id/spinnerlinear"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/zllinear"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp" >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="货物类型"
+             android:textSize="20dp" />
+        <Spinner
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/txtborder"
+            android:id="@+id/invoicespiner"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+     </LinearLayout>
+     <LinearLayout
+         android:id="@+id/linear"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/spinnerlinear"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp" >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="装车位"
+             android:textSize="20dp" />
+
+         <EditText
+             android:hint="代码为：ZC001-ZC999"
+             android:id="@+id/locationedittext"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:layout_weight="1"
+             android:background="@drawable/txtborder" />
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/linear1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linear"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp" >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="发车凭证  "
+             android:textSize="20dp" />
+
+         <EditText
+             android:id="@+id/departvoucheredittext"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:layout_weight="1"
+             android:background="@drawable/txtborder" />
+
+     </LinearLayout>
+     <LinearLayout
+         android:id="@+id/linear2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linear1"
+         android:layout_marginTop="10dp" >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="下一站   "
+             android:textSize="20dp" />
+
+         <EditText
+             android:id="@+id/truckNextStation"
+             android:layout_width="80dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:background="@drawable/txtborder" />
+           <EditText
+             android:id="@+id/truckNextStationcontent"
+             android:layout_width="100dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:layout_weight="1"
+             android:singleLine="true"
+             android:background="@drawable/txtborder" />
+
+     </LinearLayout>
+     <LinearLayout
+         android:id="@+id/linear3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linear2"
+         android:layout_marginTop="10dp" >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="运单号   "
+             android:textSize="20dp" />
+
+          <EditText
+             android:id="@+id/trucknumbercontent"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:background="@drawable/txtborder" 
+              android:layout_weight="1"
+            />
+           <Button 
+             android:id="@+id/truckupdate"
+             android:text="添加"
+             android:background="@drawable/bg_border1" 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"/>
+
+     </LinearLayout>
+     <LinearLayout
+         android:id="@+id/linear4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linear3"
+         android:layout_marginTop="10dp" >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="已扫描数"
+             android:textSize="20dp" />
+
+         <EditText
+             android:id="@+id/truckScannednumber"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:layout_weight="1"
+             android:text="0"
+             android:background="@drawable/txtborder" />
+         <Button 
+             android:id="@+id/truckdelete"
+             android:text="删除"
+             android:background="@drawable/bg_border1" 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"/>
+
+     </LinearLayout>
+     <Button 
+         android:id="@+id/invoicebackbutton"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linear4"
+         android:text="返回"
+         android:layout_centerInParent="true"
+         android:layout_marginTop="20dp"
+         android:background="@drawable/login_button_selector"/>
+ </RelativeLayout>
+
+</ScrollView>

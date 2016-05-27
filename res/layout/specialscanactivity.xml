@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:background="@drawable/bg1"
+    android:layout_height="match_parent" >
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff8540" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="20dp" 
+            android:text="韵达快递-工种选择[中国人]" />
+
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingBottom="10dp"
+             android:layout_marginLeft="50dp"
+            android:src="@drawable/jiantou1" />
+
+        <TextView
+            android:id="@+id/toataldatass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="0/0"
+            android:textSize="20dp" 
+ />
+
+    </LinearLayout>
+<RelativeLayout 
+    android:id="@+id/menue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:layout_below="@+id/linearLayout1"
+     android:layout_centerInParent="true"
+     android:layout_marginTop="10dp"
+    >
+
+	<Button
+	    android:id="@+id/Special_part_scan"
+	    android:layout_width="260dp"
+	    android:layout_height="40dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/login_button_selector"
+	    android:text="101| 特殊件扫描" />
+	
+<Button
+	    android:id="@+id/Unloading_scan"
+	    android:layout_width="260dp"
+	    android:layout_height="40dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/login_button_selector"
+	    android:layout_below="@id/Special_part_scan"
+	    android:text="102|    卸车扫描" />
+	
+    <Button
+	    android:id="@+id/Scan_to_scan"
+	    android:layout_width="260dp"
+	    android:layout_height="40dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/login_button_selector"
+	    android:layout_below="@id/Unloading_scan"
+	    android:text="103|    到件扫描" />
+	<Button
+	    android:id="@+id/Scanning_of_hair"
+	    android:layout_width="260dp"
+	    android:layout_height="40dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/login_button_selector"
+	    android:layout_below="@id/Scan_to_scan"
+	    android:text="104|    发件扫描" />
+	<Button
+	    android:id="@+id/Packet_scanning"
+	    android:layout_width="260dp"
+	    android:layout_height="40dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/login_button_selector"
+	    android:layout_below="@id/Scanning_of_hair"
+	    android:text="106|    集包扫描" />
+	<Button
+	    android:id="@+id/Loading_scan"
+	    android:layout_width="260dp"
+	    android:layout_height="40dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/login_button_selector"
+	    android:layout_below="@id/Packet_scanning"
+	    android:text="107|   装车扫描" />
+	<Button
+	    android:id="@+id/Reflow_scan"
+	    android:layout_width="260dp"
+	    android:layout_height="40dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/login_button_selector"
+	    android:layout_below="@id/Loading_scan"
+	    android:text="108|回流件扫描" />
+	<Button
+	    android:id="@+id/Vehicle_scheduling"
+	    android:layout_width="260dp"
+	    android:layout_height="40dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/login_button_selector"
+	    android:layout_below="@id/Reflow_scan"
+	    android:text="109|   车辆调度" />
+	
+</RelativeLayout>
+   <Button 
+       android:layout_width="250dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/Back_button"
+       android:layout_below="@id/menue"
+       android:layout_centerInParent="true"
+       android:background="@drawable/login_button_selector"
+       android:text="关闭"
+       android:layout_marginTop="15dp"
+       />
+
+</RelativeLayout>
+</ScrollView>

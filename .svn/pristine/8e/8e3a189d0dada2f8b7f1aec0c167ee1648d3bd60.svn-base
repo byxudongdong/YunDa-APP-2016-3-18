@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.yunda.xlistview.cn.XListView
+        android:layout_marginTop="30dp"
+        android:id="@+id/stuffListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.yunda.xlistview.cn.XListView>
+
+    <TextView
+        android:id="@+id/dengluid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:text="员工编号" />
+
+    <TextView
+        android:id="@+id/gongzhongming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+         android:textSize="20dp"
+        android:text="员工姓名" />
+<com.yunda.untils.RoundProgressBar
+            android:id="@+id/roundProgressBar5"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_centerInParent="true"
+             />
+</RelativeLayout>

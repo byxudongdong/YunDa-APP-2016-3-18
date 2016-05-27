@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:background="@drawable/bg1"
+     >
+ <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+     <LinearLayout
+         android:id="@+id/linear1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="5dp"
+          >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="运单号码"
+             android:textSize="20dp" />
+
+            />
+          <EditText
+              android:id="@+id/wbilltext"
+              android:layout_width="230dp"
+              android:layout_height="wrap_content"
+                 android:imeOptions="actionSend"
+                    android:singleLine="true"
+              android:background="@drawable/txtborder" />
+
+          <Button
+              android:id="@+id/addbutton"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+               android:layout_marginLeft="20dp"
+               android:background="@drawable/login_button_selector"
+               android:layout_marginTop="3dp"
+               android:layout_marginRight="2dp"
+              android:text="OK添加  " />
+     </LinearLayout>
+     <LinearLayout
+         android:id="@+id/linear2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linear1"
+         android:layout_marginTop="10dp"
+           android:layout_marginLeft="5dp"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="已扫描数"
+             android:textSize="20dp" />
+
+         <EditText
+             android:id="@+id/totaltext"
+             android:layout_width="230dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:text="0"
+             android:enabled="false"
+             android:background="@drawable/txtborder" />
+
+         <Button
+             android:id="@+id/delete"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+              android:background="@drawable/login_button_selector"
+              android:layout_marginLeft="20dp"
+             android:text="    删除     " />
+
+     </LinearLayout>
+     <LinearLayout 
+         android:id="@+id/linear3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linear2"
+         android:orientation="horizontal"
+         >   
+     </LinearLayout>
+        <LinearLayout
+         android:id="@+id/linear4"
+         android:layout_width="match_parent"
+         android:layout_height="150dp"
+         android:layout_below="@id/linear3"
+         android:layout_marginTop="5dp"
+         >
+      <ListView 
+          android:id="@+id/retulist"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          ></ListView>
+     </LinearLayout>
+     <Button 
+         android:id="@+id/back"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/linear4"
+         android:text="返回"
+         android:layout_centerInParent="true"
+     	 android:layout_alignParentBottom="true"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/login_button_selector"/>
+
+
+
+  <TextView
+      android:id="@+id/returndataload"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/linear2"
+      android:layout_below="@+id/linear4"
+      android:paddingTop="5dp"
+      android:text="0"
+      android:textSize="50dp" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/total"
+         android:layout_alignBottom="@+id/total"
+         android:layout_toRightOf="@+id/returndataload"
+         android:text="/"
+         android:textSize="50dp" />
+       <TextView
+         android:id="@+id/total"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/back"
+         android:layout_toRightOf="@+id/textView1"
+         android:text="0"
+         android:textSize="50dp" />
+
+       <ImageView
+           android:id="@+id/imageV1"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_alignBottom="@+id/total"
+           android:layout_marginBottom="14dp"
+           android:layout_toLeftOf="@+id/back" />
+
+ </RelativeLayout>
+    
+
+</RelativeLayout>

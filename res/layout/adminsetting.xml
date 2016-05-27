@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/ScrollView01"
+     android:background="@drawable/bg1"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+        <TextView
+            android:id="@+id/ed_medit"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+			android:text="韵达快递-管理员设置 "
+			android:background="@android:color/holo_orange_light"
+            />
+        
+	<LinearLayout 
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_weight="2"
+        	>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+
+            <Button
+                android:id="@+id/serverbutton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_button_selector"
+                android:text="服务器设置[1]" />
+
+        </LinearLayout>
+    <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+
+    <Button
+        android:id="@+id/AutouploadButton"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button_selector"
+        android:text="自动上传设置[2]" />
+
+     </LinearLayout>
+    </LinearLayout>
+    	<LinearLayout 
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_weight="2"
+        	>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+
+            <Button
+                android:id="@+id/Data_clearbutton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_button_selector"
+                android:text="手表数据清空[3]" />
+
+        </LinearLayout>
+    <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+
+    <Button
+        android:id="@+id/Record_query"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button_selector"
+        android:text="记录查询[4]" />
+
+     </LinearLayout>
+    </LinearLayout>
+    	<LinearLayout 
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_weight="2"
+        	>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+
+            <Button
+                android:id="@+id/System_settings"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_button_selector"
+                android:text="系统设置[5]" />
+
+        </LinearLayout>
+    <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+
+    <Button
+        android:id="@+id/Data_download"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button_selector"
+        android:text="资料下载[6]" />
+
+     </LinearLayout>
+    </LinearLayout>
+    	<LinearLayout 
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_weight="2"
+        	>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+
+        </LinearLayout>
+    <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+
+     </LinearLayout>
+    </LinearLayout>
+    	<LinearLayout 
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_weight="2"
+        	>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+        </LinearLayout>
+    <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+     </LinearLayout>
+    </LinearLayout>
+    	<LinearLayout 
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_weight="2"
+        	>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+        </LinearLayout>
+    <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+     </LinearLayout>
+    </LinearLayout>
+    	<LinearLayout 
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_weight="2"
+        	>
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+        </RelativeLayout>
+    <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+     </LinearLayout>
+    </LinearLayout>
+    	<LinearLayout 
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_weight="2"
+        	>
+       <LinearLayout 
+           	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+           >
+       </LinearLayout>
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+		    >
+		</LinearLayout>   
+    </LinearLayout>
+    	<LinearLayout 
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_weight="2"
+        	>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+
+            <Button
+                android:id="@+id/backbutton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/login_button_selector"
+                android:text="返回" />
+
+        </LinearLayout>
+    
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

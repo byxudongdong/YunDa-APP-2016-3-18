@@ -1,0 +1,147 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".LoginActivity" >
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/yunda123" />
+        <ImageView
+            android:id="@+id/loginImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dip" />
+
+        <EditText
+            android:id="@+id/companycode"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_below="@id/loginImage"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/txtborder"
+            android:gravity="center_vertical"
+            android:hint="请输入公司编码"
+            android:maxLength="30"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:textColorHighlight="#7e4d84" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_below="@id/companycode"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/txtborder"
+            android:gravity="center_vertical"
+            android:hint="请输入员工编号"
+            android:maxLength="30"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:textColorHighlight="#7e4d84" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_below="@id/username"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/txtborder"
+            android:gravity="center_vertical"
+            android:hint="请输入员工密码"
+            android:paddingRight="2dp"
+            android:password="true"
+             
+            />
+
+        <CheckBox
+            android:id="@+id/savePasswordCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginTop="2dp"
+            android:text="记住账号和密码"
+            android:textColor="@android:color/black"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/savePasswordCB"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="150dip"
+                android:layout_height="45dip"
+                android:layout_weight="1"
+                android:background="@drawable/login_button_selector"
+                android:gravity="center"
+                android:text="登录" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/mRegister"
+                android:layout_width="150dip"
+                android:layout_height="45dip"
+                android:layout_weight="1"
+                android:background="@drawable/login_button_selector"
+                android:text="设置" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dengluid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/savePasswordCB"
+            android:layout_alignBottom="@+id/savePasswordCB"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dp"
+            android:text="版本号：V-1.0"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/devieid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/img"
+            android:text="设备ID： 1001"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+    </RelativeLayout>
+ <LinearLayout
+        android:id="@+id/login_dialog_progress_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/sercice_dialog_progress"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="正在连接服务器，请稍后。。。" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg1">
+ <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff8540" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="韵达快递-业务操作[中国人]" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" 
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearLayout1"
+        >
+
+        <Button
+            android:onClick="onclick"
+            android:id="@+id/truckscanbutton"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_button_selector"
+            android:text="装车扫描[1]" />
+
+        <Button
+            android:onClick="onclick"
+            android:id="@+id/truckfinish"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/truckscanbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button_selector"
+            android:text="装车结束[2]" />
+
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        >
+       <Button
+            android:onClick="onclick"
+            android:id="@+id/truckloadingback_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_button_selector"
+            android:text="返回" />
+    </RelativeLayout>
+ </RelativeLayout>
+
+</LinearLayout>
